@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronomi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Metronomi</h1>
+
+        <label for="bpm">Tempo: <span id="bpm-value">120</span> BPM</label>
+        <input type="range" id="bpm" min="40" max="240" value="120">
+
+        <label for="time-signature">Tahtilaji:</label>
+        <select id="time-signature">
+            <option value="2">2/4</option>
+            <option value="3">3/4</option>
+            <option value="4" selected>4/4</option>
+            <option value="6">6/8</option>
+        </select>
+
+        <button id="toggle">▶ Start</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
